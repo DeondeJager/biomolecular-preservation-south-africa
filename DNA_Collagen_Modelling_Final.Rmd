@@ -1,0 +1,668 @@
+---
+title: "DNA and collagen preservation modelling"
+author: "Andi Wilson and Deon de Jager"
+date: "2025-12-21"
+output:
+  html_document:
+    toc_float: true
+    toc: true
+  pdf_document:
+    toc: true
+---
+# 0. Experiment Details
+
+**Aim:** 
+
+  * To determine whether age of specimen affects the preservation of aDNA
+  * To determine whether age of specimen affects the preservation of collagen
+  * To determine whether DNA and collagen preservation are correlated 
+  * To determine whether age of specimen affects read length
+
+**Factors to consider:** 
+
+  * noMicro_endoPropxTarget: This is the endogenous DNA proportion where microbe-like and mitochondrial-like regions have been masked.
+  * latest_chrono_age: This is the estimated age of the specimen.
+  * Site_short: The fossil sites, in shorthand.
+  * Taxon_plots_common: The assigned taxon for plotting and modelling purposes.
+  * material_group: Tooth or Bone.
+  * species_identifiable: Yes or No.
+  * noMicro_meanLengthxTarget: The mean read length of endogenous reads (only relevant for those where species_identifiable == "Yes").
+  * Coll_Yield_perc: The collagen yield as a percentage. Only relevant for Phase 1 specimens (StudyPhase == "Phase1").
+
+**Analyses performed:**
+
+  * **Analysis 1:** Endogenous DNA content vs age 
+      
+  * **Analysis 2:** Collagen yield vs age
+  
+  * **Analysis 3:** Endogenous DNA content vs collagen yield
+
+  * **Analysis 4:** Read length vs age
+  
+      - First analysis: Including all sites
+      - Second analysis: Including only NBC
+
+
+#### Load libraries and set working directory 
+```{r message=FALSE, warning=FALSE}
+library(ggplot2)
+library(tidyverse)
+library(rstatix)
+library(lme4)
+library(MASS)
+
+setwd("C:/Users/pzx702/Documents/MSCAFellowship2021/Manuscripts/2023_aDNApreservation_SouthAfrica/Results/Paleomix/compMap_nc")
+
+```
+
+
+# 1. ENDOGENOUS DNA CONTENT vs AGE 
+
+#### Load data
+```{r message=FALSE, warning=FALSE}
+Data <- read_csv("Table S3 - paleomix nuclear & collagen.csv")
+
+#Log transform the endogenous content column 
+Data$log_endo <- log(Data$noMicro_endoPropxTarget)
+
+```
+
+#### Create plot of age vs endogenous content
+```{r}
+Data %>%
+  ggplot(aes(x = latest_chrono_age, y = noMicro_endoPropxTarget)) +
+  geom_jitter() + 
+  labs(title = "Endogenous DNA content plotted against age")
+
+Data %>%
+  ggplot(aes(x = latest_chrono_age, y = log_endo)) +
+  geom_jitter() + 
+  labs(title = "log(Endogenous DNA content) plotted against age")
+```
+
+#### Histograms
+#### Figure out distribution of the data, based on endogenous content
+
+```{r}
+#Filter based just on the endogenous content
+EnCo_hist <- Data$noMicro_endoPropxTarget
+LogEnCo_hist <- Data$log_endo
+
+#Generate the  histogram 
+hist(EnCo_hist)
+hist(LogEnCo_hist)
+```
+
+**Note:** The log transformed data looks more or less normally distributed, so test out linear models based on gaussian (=normal) distributions
+
+#### Testing various models
+```{r}
+#Use linear models for all, but test for the various potential factors 
+## Set sum-to-zero contrasts to compare each site to the overall average, instead of a reference site,
+## which by default is the first site alphabetically (BNK1). Will also apply to taxon and material group.
+#Model only considering the effect of age on endogenous content
+LM <- lm(log_endo ~ latest_chrono_age, data = Data)
+RVAideMemoire::plotresid(LM)
+summary(LM)
+
+#Model considering the effect of age and its interaction with site on endogenous content
+## Set levels, so that all sites are compared to NBC (largest sample size). See also options("contrasts")
+Data$Site_short <- factor(Data$Site_short,
+                         levels = c("NBC", "DK1", "EBC", "KRM", "BPA", "BNK1"))
+LM_SS <- lm(log_endo ~ latest_chrono_age * Site_short, data = Data)
+RVAideMemoire::plotresid(LM_SS)
+summary(LM_SS)
+
+#Model considering the effect of age and its interaction with material group on endogenous content
+## Set levels, so that tooth is the reference. See also options("contrasts")
+Data$material_group <- factor(Data$material_group,
+                              levels = c("Tooth", "Bone"))
+LM_MG <- lm(log_endo ~ latest_chrono_age * material_group, data = Data)
+RVAideMemoire::plotresid(LM_MG)
+summary(LM_MG)
+
+#Model considering the effect of age and its interaction with site and material group on endogenous content
+LM_SS_MG <- lm(log_endo ~ latest_chrono_age * Site_short * material_group, data = Data)
+RVAideMemoire::plotresid(LM_SS_MG)
+summary(LM_SS_MG)
+
+#Model considering the effect of age and its interaction with the taxon on endogenous content
+## Set levels, so that all species are compared to Cape buffalo (largest sample size). See also options("contrasts")
+Data$Taxon_plots_common <- factor(Data$Taxon_plots_common,
+                         levels = c("Cape buffalo", "Cape grysbok", "Common eland", "Grey rhebok", "Long-horned buffalo", "Reedbuck"))
+LM_TP <- lm(log_endo ~ latest_chrono_age * Taxon_plots_common, data = Data)
+RVAideMemoire::plotresid(LM_TP)
+summary(LM_TP)
+
+#Model considering the effect of age and its interaction with site and taxon on endogenous content
+LM_SS_TP <- lm(log_endo ~ latest_chrono_age * Site_short * Taxon_plots_common, data = Data)
+RVAideMemoire::plotresid(LM_SS_TP)
+summary(LM_SS_TP)
+
+#Calculate the AIC/AIcc values for each model (AICc required for transformed response variable, as in our case) 
+AIC(LM, LM_SS, LM_MG, LM_SS_MG, LM_TP, LM_SS_TP)
+purrr::map_dbl(list(LM = LM, LM_SS = LM_SS, LM_MG = LM_MG, LM_SS_MG = LM_SS_MG, LM_TP = LM_TP, LM_SS_TP = LM_SS_TP),
+  performance::performance_aicc)
+```
+
+**Note:** Both LM_SS (site) and LM_TP (taxon) seem to fit pretty well and their AICc values are the lowest. 
+
+1. Independence (horizontal red line on left handside graph) looks ok
+
+2. homoscedasticity (spread of data above and below 0 on left handside graph) looks good
+
+3. and normality (data points inside blue region on right handside graph) looks good.
+
+Will do remaining analyses on both models, but it's likely that **LM_SS** (site) is more relevant to DNA preservation than **LM_TP** (taxon).  
+
+```{r}
+#Linear model with Site included
+
+#ANOVA
+car::Anova(LM_SS, type = "II")
+
+```
+
+```{r}
+#Linear model with Taxon included
+
+#ANOVA
+car::Anova(LM_TP, type = "II")
+
+```
+
+## 1.1. Summary of Endogenous DNA Content vs age
+
+The log-transformed data were normally distributed and could be analysed using a linear model. Various models were tested, taking into account additional factors like site of origin, species of origin, and material. 
+
+Overall, the best and most biologically-relevant model was likely the lm model that took into account site as an experimental variable. The independence, homoscedasticity, and normality looked correct according to the resid plots. 
+
+**The LM_SS model and ANOVA gave the following results**
+
+  1. Multiple R-squared:  0.4175
+  2. Adjusted R-squared:  0.3689
+  
+  3. Age significantly impacted endogenous content, F = 5.7518, Df = 1, p < 0.05 
+  4. Site significantly impacted endogenous content, F = 4.6632, Df = 5, p < 0.001
+  5. latest_chrono_age:Site_short significantly impacted endogenous content, F = 7.9459, Df = 5, p < 0.001
+  
+**Note:** The material group was also investigated as an experimental variable, but it did not significantly contribute to the endogenous DNA content. This may be due to the unequal sampling (14 bones vs 131 teeth).
+
+# 2. COLLAGEN YIELD VS AGE 
+
+#### Load data in
+```{r message=FALSE, warning=FALSE}
+Data_CollagenAge <- read_csv("Table S3 - paleomix nuclear & collagen.csv")
+
+#Log transform the collagen data
+Data_CollagenAge$log_Coll <- log(Data_CollagenAge$Coll_Yield_perc)
+Data_CollagenAge <- Data_CollagenAge %>% 
+  filter(StudyPhase == "Phase 1")
+
+```
+
+#### Create plot of collagen vs endogenous content
+```{r}
+Data_CollagenAge %>%
+  ggplot(aes(x = latest_chrono_age, y = Coll_Yield_perc)) +
+  geom_jitter() + 
+  labs(title = "Collagen Yield against age")
+
+Data_CollagenAge %>%
+  ggplot(aes(x = latest_chrono_age, y = log_Coll)) +
+  geom_jitter() + 
+  labs(title = "log(Collagen Yield) plotted against age")
+```
+
+#### Histograms
+#### Figure out distribution of the data, based on endogenous content
+
+```{r}
+#Filter based just on the endogenous content
+CollagenAge_hist <- Data_CollagenAge$Coll_Yield_perc
+Log_CollagenAge_hist <- Data_CollagenAge$log_Coll
+
+#Generate the  histogram 
+hist(CollagenAge_hist)
+hist(Log_CollagenAge_hist)
+```
+
+**Note:** The untransformed data looks as though it follows a gamma distribution and the log-transformed data does not follow a normal distribution. Therefore, use untransformed data and a GLM for a Gamma distribution and a inverse link.  
+
+#### Testing various models
+```{r}
+#Use gamma models, but test for the various potential factors 
+
+#Added a small variable so that the GLM can be run. There are some 0s in the Collage Yield column. 
+Data_CollagenAge$Coll_Yield_adj <- Data_CollagenAge$Coll_Yield_perc + 1e-8
+
+#Model only considering the effect of age on collagen yield
+GLM_collagen_age <- glm(Coll_Yield_adj ~ latest_chrono_age, data = Data_CollagenAge, 
+                       family = Gamma(link = "inverse"))
+RVAideMemoire::plotresid(GLM_collagen_age)
+summary(GLM_collagen_age)
+
+#Model considering the effect of age and its interaction with site on collagen yield
+# Note: Does not run, because sampling is to uneven across sites (both in sample size and age range)
+## Set levels, so that all sites are compared to NBC. See also options("contrasts")
+#Data_CollagenAge$Site_short <- factor(Data_CollagenAge$Site_short,
+#                         levels = c("NBC", "DK1", "EBC", "KRM", "BPA", "BNK1"))
+#GLM_SS_collagen_age <- glm(Coll_Yield_adj ~ latest_chrono_age * Site_short, data = Data_CollagenAge,  
+#                         family = Gamma(link = "inverse"))
+#RVAideMemoire::plotresid(GLM_SS_collagen_age)
+#summary(GLM_SS_collagen_age)
+
+#Model considering the effect of age and its interaction with material group on collagen yield
+## Set levels, so that tooth is the reference. See also options("contrasts")
+Data_CollagenAge$material_group <- factor(Data_CollagenAge$material_group,
+                              levels = c("Tooth", "Bone"))
+GLM_MG_collagen_age <- glm(Coll_Yield_adj ~ latest_chrono_age * material_group, data = Data_CollagenAge, 
+                          family = Gamma(link = "inverse"))
+RVAideMemoire::plotresid(GLM_MG_collagen_age)
+summary(GLM_MG_collagen_age)
+
+#Model considering the effect of age and its interaction with taxon on collagen yield
+## Set levels, so that all species are compared to Cape buffalo. See also options("contrasts")
+Data_CollagenAge$Taxon_plots_common <- factor(Data_CollagenAge$Taxon_plots_common,
+                         levels = c("Cape buffalo", "Cape grysbok", "Common eland", "Grey rhebok", "Long-horned buffalo", "Reedbuck"))
+GLM_TP_collagen_age <- glm(Coll_Yield_adj ~ latest_chrono_age * Taxon_plots_common, data = Data_CollagenAge, 
+                             family = Gamma(link = "inverse"))
+RVAideMemoire::plotresid(GLM_TP_collagen_age)
+summary(GLM_TP_collagen_age)
+
+#Calculate the AIC/AIcc values for each model (AICc corrects for small sample sizes, as is the case here) 
+AIC(GLM_collagen_age, GLM_MG_collagen_age, GLM_TP_collagen_age)
+purrr::map_dbl(list(GLM_collagen_age = GLM_collagen_age, GLM_MG_collagen_age = GLM_MG_collagen_age, GLM_TP_collagen_age = GLM_TP_collagen_age),
+  performance::performance_aicc)
+```
+
+**Note:** The GLM_collagen_age seems to fit pretty well and its AICc value is the lowest. 
+
+1. Independence (horizontal red line) looks ok
+
+
+```{r}
+#Linear model with Site included
+
+#ANOVA
+car::Anova(GLM_collagen_age, type = "II")
+
+#To calculate the deviance explained by the model 
+1 - (GLM_collagen_age$deviance / GLM_collagen_age$null.deviance)
+```
+
+## 2.1. Summary of collagen yield vs age
+
+In this analysis, untransformed data appeared to have a Gamma distribution and could be analysed using a generalized linear model with an "inverse" link. Various models were tested, taking into account additional factors like species of origin, and material (site of origin could not be tested due to uneven distribution of samples across sites and age). 
+
+Overall, the best and most biologically-relevant model was the glm model that only took into account age. The independence looked correct according to the resid plots. 
+
+  1. The model explained approximately 52% of the deviance in collagen yield.
+  2. Collagen yield is significantly impacted by age (ANOVA), LR Chisq = 114.08, Df = 1, p < 0.001
+
+# 3. ENDOGENOUS DNA CONTENT VS COLLAGEN YIELD
+
+#### Load data in
+```{r message=FALSE, warning=FALSE}
+Data <- read_csv("Table S3 - paleomix nuclear & collagen.csv")
+
+#Log transform the endogenous content column 
+Data$log_endo <- log(Data$noMicro_endoPropxTarget)
+
+# Filter for Phase 1 samples, which have both DNA and collagen data
+Data_Collagen <- Data %>% filter(StudyPhase == "Phase 1")
+
+```
+
+#### Create plot of collagen vs endogenous content
+```{r}
+Data_Collagen %>%
+  ggplot(aes(x = Coll_Yield_perc, y = noMicro_endoPropxTarget)) +
+  geom_jitter() + 
+  labs(title = "Endogenous DNA content plotted against Collagen Yield")
+
+Data_Collagen %>%
+  ggplot(aes(x = Coll_Yield_perc, y = log_endo)) +
+  geom_jitter() + 
+  labs(title = "log(Endogenous DNA content) plotted against Collagen Yield")
+```
+
+#### Histograms
+#### Figure out distribution of the data, based on endogenous content
+
+```{r}
+#Filter based just on the endogenous content
+EnCo_Collagen_hist <- Data_Collagen$noMicro_endoPropxTarget
+LogEnCo_Collagen_hist <- Data_Collagen$log_endo
+
+#Generate the  histogram 
+hist(EnCo_Collagen_hist)
+hist(LogEnCo_Collagen_hist)
+```
+
+**Note:** The log transformed data looks liked it might be more or less normally distributed, so test out linear models based on gaussian (=normal) distributions. Also doing this because both variables are continuous. 
+
+#### Testing various models
+```{r}
+#Use linear models for all, but test for the various potential factors 
+
+#Model only considering the effect of age on endogenous content
+LM_collagen <- lm(log_endo ~ Coll_Yield_perc, data = Data_Collagen)
+RVAideMemoire::plotresid(LM_collagen)
+summary(LM_collagen)
+
+#Model considering the effect of age and its interaction with site on endogenous content
+## Set levels, so that all sites are compared to NBC. See also options("contrasts")
+Data_Collagen$Site_short <- factor(Data_Collagen$Site_short,
+                         levels = c("NBC", "DK1", "EBC", "KRM", "BPA", "BNK1"))
+LM_SS_collagen <- lm(log_endo ~ Coll_Yield_perc * Site_short, data = Data_Collagen)
+RVAideMemoire::plotresid(LM_SS_collagen)
+summary(LM_SS_collagen)
+
+#Model considering the effect of age and its interaction with material group on endogenous content
+## Set levels, so that tooth is the reference. See also options("contrasts")
+Data_Collagen$material_group <- factor(Data_Collagen$material_group,
+                              levels = c("Tooth", "Bone"))
+LM_MG_collagen <- lm(log_endo ~ Coll_Yield_perc * material_group, data = Data_Collagen)
+RVAideMemoire::plotresid(LM_MG_collagen)
+summary(LM_MG_collagen)
+
+#Model considering the effect of age and its interaction with site and material group on endogenous content
+LM_SS_MG_collagen <- lm(log_endo ~ Coll_Yield_perc * Site_short * material_group, data = Data_Collagen)
+RVAideMemoire::plotresid(LM_SS_MG_collagen)
+summary(LM_SS_MG_collagen)
+
+#Model considering the effect of age and its interaction with the taxon on endogenous content
+## Set levels, so that all species are compared to Cape buffalo. See also options("contrasts")
+Data_Collagen$Taxon_plots_common <- factor(Data_Collagen$Taxon_plots_common,
+                         levels = c("Cape buffalo", "Cape grysbok", "Common eland", "Grey rhebok", "Long-horned buffalo", "Reedbuck"))
+LM_TP_collagen <- lm(log_endo ~ Coll_Yield_perc * Taxon_plots_common, data = Data_Collagen)
+RVAideMemoire::plotresid(LM_TP_collagen)
+summary(LM_TP_collagen)
+
+#Model considering the effect of age and its interaction with site and taxon on endogenous content
+LM_SS_TP_collagen <- lm(log_endo ~ Coll_Yield_perc * Site_short * Taxon_plots_common, data = Data_Collagen)
+RVAideMemoire::plotresid(LM_SS_TP_collagen)
+summary(LM_SS_TP_collagen)
+
+#Calculate the AIC/AIcc values for each model (AICc required for transformed response variable, as in our case) 
+AIC(LM_collagen, LM_SS_collagen, LM_MG_collagen, LM_SS_MG_collagen, LM_TP_collagen, LM_SS_TP_collagen)
+purrr::map_dbl(list(LM_collagen = LM_collagen, LM_SS_collagen = LM_SS_collagen, LM_MG_collagen = LM_MG_collagen, LM_SS_MG_collagen = LM_SS_MG_collagen, LM_TP_collagen = LM_TP_collagen, LM_SS_TP_collagen = LM_SS_TP_collagen),
+  performance::performance_aicc)
+```
+
+**Note:** The LM_SS_collagen (site) seems to fit pretty well and its AICc value is the lowest. 
+
+1. Independence (horizontal red line on left handside graph) looks ok
+
+2. homoscedasticity (spread of data above and below 0 on left handside graph) looks good
+
+3. and normality (data points inside blue region on right handside graph) looks good.
+
+```{r}
+#Linear model with Site included
+
+#ANOVA
+car::Anova(LM_SS_collagen, type = "II")
+
+```
+
+## 3.1. Summary of Endogenous DNA Content vs collagen yield
+
+In this analysis, the log-transformed data looked to be normally distributed and thus a linear model was used. Various models were tested, taking into account additional factors like site of origin, species of origin, and material. 
+
+Overall, the best and most biologically-relevant model was likely the lm model that took into account site as an experimental variable. The independence, homoscedasticity, and normality looked correct according to the resid plots. 
+
+  1. Multiple R-squared:  0.7711
+  2. Adjusted R-squared:  0.7242
+  
+  
+  3. Collagen yield (percentage) significantly impacted endogenous content, F = 46.9561, Df = 1, p < 0.001
+  4. Site significantly impacted endogenous content, F = 7.1415, Df = 4, p < 0.001
+  5. Coll_Yield_perc:Site_short significantly impacted endogenous DNA content: F = 2.7939, Df = 4, p < 0.05
+
+Therefore, collagen yield is partially predictive of endogenous DNA content, together with site. There was a significant effect of the interaction between collagen yield and site. 
+
+
+# 4. READ LENGTH VS AGE
+## 4.1. Analyses including only those with true endogenous DNA 
+
+#### Filter for specimens where species_identifiable == "Yes"
+```{r message=FALSE, warning=FALSE}
+Data <- read_csv("Table S3 - paleomix nuclear & collagen.csv")
+
+#Log transform the read length (in case needed)
+Data$log_rl <- log(Data$noMicro_meanLengthxTarget)
+
+# filter
+Data_Yes <- Data %>% filter(species_identifiable == "Yes")
+
+```
+
+#### Create plot of age vs mean read length
+```{r}
+Data_Yes %>%
+  ggplot(aes(x = latest_chrono_age, y = noMicro_meanLengthxTarget)) +
+  geom_jitter() + 
+  labs(title = "Mean read length plotted against age")
+
+Data_Yes %>%
+  ggplot(aes(x = latest_chrono_age, y = log_rl)) +
+  geom_jitter() + 
+  labs(title = "log(Mean read length) plotted against age")
+```
+
+#### Histograms
+#### Figure out distribution of the data, based on endogenous content
+
+```{r}
+#Filter based just on the endogenous content
+rl_yes_hist <- Data_Yes$noMicro_meanLengthxTarget
+log_rl_yes_hist <- Data_Yes$log_rl
+
+#Generate the  histogram 
+hist(rl_yes_hist)
+hist(log_rl_yes_hist)
+```
+
+**Note:** The log transformed data looks more or less normally distributed, so test out linear models based on gaussian (=normal) distributions
+
+#### Testing various models
+```{r}
+#Use linear models for all, but test for the various potential factors 
+
+#Model only considering the effect of age on read length
+LM_Yes <- lm(log_rl ~ latest_chrono_age, data = Data_Yes)
+RVAideMemoire::plotresid(LM_Yes)
+summary(LM_Yes)
+
+#Model considering the effect of age and its interaction with site on endogenous content
+## Set levels, so that all sites are compared to NBC. See also options("contrasts")
+Data_Yes$Site_short <- factor(Data_Yes$Site_short,
+                         levels = c("NBC", "DK1", "EBC", "KRM", "BPA", "BNK1"))
+LM_SS_Yes <- lm(log_rl ~ latest_chrono_age * Site_short, data = Data_Yes)
+RVAideMemoire::plotresid(LM_SS_Yes)
+summary(LM_SS_Yes)
+
+#Model considering the effect of age and its interaction with material group on endogenous content
+## Set levels, so that tooth is the reference. See also options("contrasts")
+Data_Yes$material_group <- factor(Data_Yes$material_group,
+                              levels = c("Tooth", "Bone"))
+LM_MG_Yes <- lm(log_rl ~ latest_chrono_age * material_group, data = Data_Yes)
+RVAideMemoire::plotresid(LM_MG_Yes)
+summary(LM_MG_Yes)
+
+#Model considering the effect of age and its interaction with site and material group on endogenous content
+## Set levels, so that tooth is the reference. See also options("contrasts")
+Data_Yes$material_group <- factor(Data_Yes$material_group,
+                              levels = c("Tooth", "Bone"))
+LM_SS_MG_Yes <- lm(log_rl ~ latest_chrono_age * Site_short * material_group, data = Data_Yes)
+RVAideMemoire::plotresid(LM_SS_MG_Yes)
+summary(LM_SS_MG_Yes)
+
+#Model considering the effect of age and its interaction with the taxon on endogenous content
+## Set levels, so that all species are compared to Cape buffalo. See also options("contrasts")
+Data_Yes$Taxon_plots_common <- factor(Data_Yes$Taxon_plots_common,
+                         levels = c("Cape buffalo", "Cape grysbok", "Common eland", "Grey rhebok", "Long-horned buffalo", "Reedbuck"))
+LM_TP_Yes <- lm(log_rl ~ latest_chrono_age * Taxon_plots_common, data = Data_Yes)
+RVAideMemoire::plotresid(LM_TP_Yes)
+summary(LM_TP_Yes)
+
+#Model considering the effect of age and its interaction with site and taxon on endogenous content
+LM_SS_TP_Yes <- lm(log_rl ~ latest_chrono_age * Site_short * Taxon_plots_common, data = Data_Yes)
+RVAideMemoire::plotresid(LM_SS_TP_Yes)
+summary(LM_SS_TP_Yes)
+
+#Calculate the AIC/AIcc values for each model (AICc required for transformed response variable, as in our case) 
+AIC(LM_Yes, LM_SS_Yes, LM_MG_Yes, LM_SS_MG_Yes, LM_TP_Yes, LM_SS_TP_Yes)
+purrr::map_dbl(list(LM_Yes = LM_Yes, LM_SS_Yes = LM_SS_Yes, LM_MG_Yes = LM_MG_Yes, LM_SS_MG_Yes = LM_SS_MG_Yes, LM_TP_Yes = LM_TP_Yes, LM_SS_TP_Yes = LM_SS_TP_Yes),
+  performance::performance_aicc)
+```
+
+**Note:** LM_SS_Yes (site) seem to fit OK and its AICc values is the lowest.
+
+1. Independence (horizontal red line on left handside graph) looks ok
+
+2. homoscedasticity (spread of data above and below 0 on left handside graph) looks good
+
+3. and normality (data points inside blue region on right handside graph) looks good.
+
+Will do remaining analyses on **LM_SS_Yes** (site)  
+
+```{r}
+#Linear model with Site included
+
+#ANOVA
+car::Anova(LM_SS_Yes, type = "II")
+
+```
+
+## 4.2. Summary of Age vs mean read length
+
+The log-transformed data were normally distributed and could be analysed using a linear model. Various models were tested, taking into account additional factors like site of origin, species of origin, and material. 
+
+Overall, the best model was the lm model that took into account site as an experimental variable. The independence, homoscedasticity, and normality looked correct according to the resid plots. 
+
+**For this analysis the LM_SS model and ANOVA gave the following results**
+
+  1. Multiple R-squared:  0.5353
+  2. Adjusted R-squared:  0.4493
+  
+  3. Age did not significantly impact mean read length, F = 1.8436, Df = 1, p > 0.05 
+  4. Site significantly impacted mean read length, F = 6.0620, Df = 5, p < 0.001
+  5. latest_chrono_age:Site_short significantly impacted mean read length, F = 4.4937, Df = 4, p < 0.01
+  
+**Note:** The data are heavily skewed across sites, with 71% (46/65) of the samples coming from one site, NBC, and the other sites having <10 each. The two sites with a significant relationship with read length (EBC and KRM, p < 0.05) have 1 and 2 samples, respectively. Therefore, to see if age has an impact on read length within site, run NBC alone.
+```{r}
+table(Data_Yes$Site_short)
+```
+
+
+## 4.3. NBC: Age vs mean read length
+```{r message=FALSE, warning=FALSE}
+Data <- read_csv("Table S3 - paleomix nuclear & collagen.csv")
+
+#Log transform the read length (in case needed)
+Data$log_rl <- log(Data$noMicro_meanLengthxTarget)
+
+# filter
+Data_Yes_NBC <- Data %>% 
+  filter(species_identifiable == "Yes") %>%
+  filter(Site_short == "NBC")
+
+```
+
+#### Create plot of age vs mean read length
+```{r}
+Data_Yes_NBC %>%
+  ggplot(aes(x = latest_chrono_age, y = noMicro_meanLengthxTarget)) +
+  geom_jitter() + 
+  labs(title = "Mean read length plotted against age")
+
+Data_Yes_NBC %>%
+  ggplot(aes(x = latest_chrono_age, y = log_rl)) +
+  geom_jitter() + 
+  labs(title = "log(Mean read length) plotted against age")
+```
+
+#### Histograms
+#### Figure out distribution of the data, based on endogenous content
+
+```{r}
+#Filter based just on the endogenous content
+rl_yes_hist <- Data_Yes_NBC$noMicro_meanLengthxTarget
+log_rl_yes_hist <- Data_Yes_NBC$log_rl
+
+#Generate the  histogram 
+hist(rl_yes_hist)
+hist(log_rl_yes_hist)
+```
+**Note:** The log transformed data looks more or less normally distributed, so test out linear models based on gaussian (=normal) distributions
+
+#### Testing various models
+```{r}
+#Use linear models for all, but test for the various potential factors 
+
+#Model only considering the effect of age on read length
+LM_Yes <- lm(log_rl ~ latest_chrono_age, data = Data_Yes_NBC)
+RVAideMemoire::plotresid(LM_Yes)
+summary(LM_Yes)
+
+#Model considering the effect of age and its interaction with material group on endogenous content
+## Set levels, so that tooth is the reference. See also options("contrasts")
+Data_Yes_NBC$material_group <- factor(Data_Yes_NBC$material_group,
+                              levels = c("Tooth", "Bone"))
+LM_MG_Yes <- lm(log_rl ~ latest_chrono_age * material_group, data = Data_Yes_NBC)
+RVAideMemoire::plotresid(LM_MG_Yes)
+summary(LM_MG_Yes)
+
+#Model considering the effect of age and its interaction with the taxon on endogenous content
+## Set levels, so that all species are compared to Cape grysbok (largest sample size at NBC). See also options("contrasts")
+Data_Yes_NBC$Taxon_plots_common <- factor(Data_Yes_NBC$Taxon_plots_common,
+                         levels = c("Cape grysbok", "Cape buffalo", "Common eland", "Grey rhebok", "Long-horned buffalo", "Reedbuck"))
+LM_TP_Yes <- lm(log_rl ~ latest_chrono_age * Taxon_plots_common, data = Data_Yes_NBC)
+RVAideMemoire::plotresid(LM_TP_Yes)
+summary(LM_TP_Yes)
+
+#Model considering the effect of age and its interaction with site and taxon on endogenous content
+LM_MG_TP_Yes <- lm(log_rl ~ latest_chrono_age * material_group * Taxon_plots_common, data = Data_Yes_NBC)
+RVAideMemoire::plotresid(LM_MG_TP_Yes)
+summary(LM_MG_TP_Yes)
+
+#Calculate the AIC/AIcc values for each model (AICc required for transformed response variable, as in our case) 
+AIC(LM_Yes, LM_MG_Yes, LM_TP_Yes, LM_MG_TP_Yes)
+purrr::map_dbl(list(LM_Yes = LM_Yes, LM_MG_Yes = LM_MG_Yes, LM_TP_Yes = LM_TP_Yes, LM_MG_TP_Yes = LM_MG_TP_Yes),
+  performance::performance_aicc)
+```
+**Note:** LM_Yes (age) seem to fit OK and its AICc values is the lowest.
+
+1. Independence (horizontal red line on left handside graph) looks ok
+
+2. homoscedasticity (spread of data above and below 0 on left handside graph) looks good
+
+3. and normality (data points inside blue region on right handside graph) looks good.
+
+Will do remaining analyses on **LM_Yes** (site)  
+
+```{r}
+#Linear model with Site included
+
+#ANOVA
+car::Anova(LM_Yes, type = "II")
+
+```
+
+## 4.4. Summary of Age vs mean read length
+
+The log-transformed data were normally distributed and could be analysed using a linear model. Various models were tested, taking into account additional factors like species of origin, and material. 
+
+Overall, the best model was the lm model that only took into account age as an experimental variable. The independence, homoscedasticity, and normality looked correct according to the resid plots. 
+
+**For this analysis the LM_SS model and ANOVA gave the following results**
+
+  1. Multiple R-squared:  0.191
+  2. Adjusted R-squared:  0.1726
+  3. Age had a significant impact on mean read length, F = 10.387, Df = 1, p < 0.01 
+
+**Note:** Restricting the analysis to NBC only finds that age has a weak but significant relationship with mean read length. However, adding material group or taxon results in none of the experimental variables having a significant relationship with mean read length. Thus, it appears that this a more enigmatic relationship. Perhaps after a certain threshold age (a relatively young one), read length degradation has reached a plateau and older specimens will not necessarily have shorter reads lengths. After this threshold, other factors (micro-environmental/hyper-local) might play a more important role in mean read length.
+
