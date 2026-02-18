@@ -407,7 +407,7 @@ car::Anova(LM_SS_collagen, type = "II")
 
 ```
 
-## 3.1. Summary of Endogenous DNA Content vs collagn yield
+## 3.1. Summary of Endogenous DNA Content vs collagen yield
 
 In this analysis, the log-transformed data looked to be normally distributed and thus a linear model was used. Various models were tested, taking into account additional factors like site of origin, species of origin, and material. 
 
