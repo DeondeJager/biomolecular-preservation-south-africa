@@ -1,0 +1,10 @@
+# table produced by DamageProfiler
+# using mapped file RxA004.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+# Sample ID: RxA004.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+DNA base frequencies Sample
+A	C	G	T
+0.36379054990205917	0.20753905690124697	0.2016864937174526	0.22698389947924133
+
+DNA base frequencies Reference
+A	C	G	T
+0.36922434132913884	0.2027379079826976	0.19725717656311442	0.23078057412504915

@@ -1,0 +1,13 @@
+#Edit distances for file:PcA024.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+Edit distance	Occurrences
+0.0	0
+1.0	0
+2.0	0
+4.0	0
+17.0	0
+9.0	0
+5.0	0
+3.0	0
+6.0	0
+25.0	0
+27.0	0

@@ -1,0 +1,687 @@
+mjolnircomp01fl.unicph.domain
+Mon Dec 29 12:35:12 CET 2025
+Running job on 2 CPU cores
+[0.002s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA001.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA001.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA002.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA002.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA003.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA003.damageProfiler
+[0.002s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA004.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA004.damageProfiler
+[0.002s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA005.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA005.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA006.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA006.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA007.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA007.damageProfiler
+[0.002s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA008.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA008.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA009.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA009.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA010.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA010.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA011.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA011.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA012.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA012.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA013.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA013.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA014.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA014.damageProfiler
+[0.002s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA015.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA015.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA016.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA016.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA017.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA017.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA018.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA018.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA019.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA019.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA020.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA020.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA021.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA021.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA022.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA022.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA023.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA023.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA024.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA024.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA025.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA025.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA026.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA026.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA027.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA027.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA028.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA028.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA033.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PaA033.damageProfiler
+[0.002s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA004.BuffaloCape_Human_nc.Target.rmdup.noMicro_BEST_013.bam
+	Output folder:PaA004_BEST_013.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA004.BuffaloCape_Human_nc.Target.rmdup.noMicro_BEST_014.bam
+	Output folder:PaA004_BEST_014.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA004.BuffaloCape_Human_nc.Target.rmdup.noMicro_BEST_015.bam
+	Output folder:PaA004_BEST_015.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA004.BuffaloCape_Human_nc.Target.rmdup.noMicro_SCR_003.bam
+	Output folder:PaA004_SCR_003.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA004.BuffaloCape_Human_nc.Target.rmdup.noMicro_SCR_004.bam
+	Output folder:PaA004_SCR_004.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA004.BuffaloCape_Human_nc.Target.rmdup.noMicro_SCR_005.bam
+	Output folder:PaA004_SCR_005.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA011.BuffaloCape_Human_nc.Target.rmdup.noMicro_SCR_016.bam
+	Output folder:PaA011_SCR_016.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA011.BuffaloCape_Human_nc.Target.rmdup.noMicro_SCR_089.bam
+	Output folder:PaA011_SCR_089.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA011.BuffaloCape_Human_nc.Target.rmdup.noMicro_SCR_090.bam
+	Output folder:PaA011_SCR_090.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA012.BuffaloCape_Human_nc.Target.rmdup.noMicro_SCR_054.bam
+	Output folder:PaA012_SCR_054.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA012.BuffaloCape_Human_nc.Target.rmdup.noMicro_SCR_091.bam
+	Output folder:PaA012_SCR_091.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA013.BuffaloCape_Human_nc.Target.rmdup.noMicro_SCR_026.bam
+	Output folder:PaA013_SCR_026.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PaA013.BuffaloCape_Human_nc.Target.rmdup.noMicro_SCR_092.bam
+	Output folder:PaA013_SCR_092.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA001.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA001.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA002.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA002.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA003.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA003.damageProfiler
+[0.002s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA004.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA004.damageProfiler
+[0.002s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA005.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA005.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA006.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA006.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA007.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA007.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA008.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA008.damageProfiler
+[0.002s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA009.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA009.damageProfiler
+[0.002s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA012.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA012.damageProfiler
+[0.002s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA025.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA025.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA026.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA026.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA027.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA027.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA028.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA028.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA029.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA029.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA030.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA030.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA031.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA031.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA032.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA032.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA033.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA033.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA034.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA034.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA035.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA035.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA036.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA036.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA037.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA037.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA038.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA038.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA039.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA039.damageProfiler
+[0.002s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA040.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA040.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA041.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA041.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA042.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA042.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA043.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA043.damageProfiler
+[0.002s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA044.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA044.damageProfiler
+[0.002s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA045.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA045.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA046.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA046.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA047.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA047.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA048.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ScA048.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA005.BuffaloCape_Human_nc.Target.rmdup.noMicro_BEST_017.bam
+	Output folder:ScA005_BEST_017.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA005.BuffaloCape_Human_nc.Target.rmdup.noMicro_SCR_007.bam
+	Output folder:ScA005_SCR_007.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA009.BuffaloCape_Human_nc.Target.rmdup.noMicro_BEST_018.bam
+	Output folder:ScA009_BEST_018.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ScA009.BuffaloCape_Human_nc.Target.rmdup.noMicro_SCR_008.bam
+	Output folder:ScA009_SCR_008.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA001.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA001.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA002.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA002.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA003.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA003.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA004.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA004.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA005.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA005.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA006.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA006.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA007.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA007.damageProfiler
+[0.002s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA008.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA008.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA009.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA009.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA010.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA010.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA011.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA011.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA012.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA012.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA013.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA013.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA014.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA014.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA015.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA015.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA016.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA016.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA017.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA017.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA018.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA018.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA019.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA019.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA020.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA020.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA021.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA021.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA022.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA022.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA023.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA023.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA024.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA024.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA025.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA025.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA026.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:PcA026.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA005.ReedbuckBh_Human_nc.Target.rmdup.noMicro_BEST_011.bam
+	Output folder:PcA005_BEST_011.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:PcA005.ReedbuckBh_Human_nc.Target.rmdup.noMicro_SCR_001.bam
+	Output folder:PcA005_SCR_001.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RxA001.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RxA001.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RxA002.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RxA002.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RxA003.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RxA003.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RxA004.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RxA004.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RxA005.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RxA005.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RxA006.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RxA006.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RxA007.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RxA007.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RxA008.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RxA008.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RxA009.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RxA009.damageProfiler
+[0.002s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RxA017.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RxA017.damageProfiler
+[0.002s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RxA020.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RxA020.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RxA021.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RxA021.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RxA007.ReedbuckBh_Human_nc.Target.rmdup.noMicro_BEST_012.bam
+	Output folder:RxA007_BEST_012.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RxA007.ReedbuckBh_Human_nc.Target.rmdup.noMicro_SCR_002.bam
+	Output folder:RxA007_SCR_002.damageProfiler
+[0.009s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ToA001.ElandCommon_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ToA001.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ToA002.ElandCommon_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ToA002.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ToA003.ElandCommon_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ToA003.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ToA004.ElandCommon_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ToA004.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ToA005.ElandCommon_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ToA005.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ToA006.ElandCommon_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ToA006.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ToA007.ElandCommon_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ToA007.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ToA008.ElandCommon_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ToA008.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ToA009.ElandCommon_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ToA009.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ToA028.ElandCommon_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ToA028.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ToA029.ElandCommon_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ToA029.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ToA030.ElandCommon_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ToA030.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ToA031.ElandCommon_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ToA031.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ToA032.ElandCommon_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ToA032.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ToA034.ElandCommon_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ToA034.damageProfiler
+[0.002s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ToA035.ElandCommon_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ToA035.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ToA036.ElandCommon_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ToA036.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ToA037.ElandCommon_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ToA037.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ToA038.ElandCommon_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:ToA038.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ToA008.ElandCommon_Human_nc.Target.rmdup.noMicro_BEST_019.bam
+	Output folder:ToA008_BEST_019.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:ToA008.ElandCommon_Human_nc.Target.rmdup.noMicro_SCR_009.bam
+	Output folder:ToA008_SCR_009.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA001.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA001.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA002.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA002.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA003.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA003.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA004.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA004.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA005.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA005.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA006.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA006.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA007.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA007.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA008.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA008.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA009.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA009.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA030.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA030.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA031.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA031.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA032.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA032.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA033.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA033.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA034.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA034.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA035.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA035.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA036.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA036.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA037.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA037.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA038.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA038.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA039.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA039.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA040.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA040.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA041.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA041.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA042.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA042.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA043.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA043.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA051.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA051.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA052.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA052.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA056.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA056.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA059.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA059.damageProfiler
+[0.001s][warning][os,container] Duplicate cpuset controllers detected. Picking /sys/fs/cgroup/cpuset, skipping /cgroup/cpuset.
+Welcome to DamageProfiler v1.1
+	Input file:RmA060.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+	Output folder:RmA060.damageProfiler

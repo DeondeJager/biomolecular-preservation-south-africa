@@ -1,0 +1,74 @@
+2025-12-29 12:32:28 INFO  StartCalculations:101 - Welcome to DamageProfiler v1.1
+
+2025-12-29 12:32:28 INFO  StartCalculations:104 - Parameters: 
+
+2025-12-29 12:32:28 INFO  StartCalculations:105 - 	Analysis of file (-i):		ScA037.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+2025-12-29 12:32:28 INFO  StartCalculations:106 - 	Output folder (-o):		null
+2025-12-29 12:32:28 INFO  StartCalculations:107 - 	Reference (-r, optional):	/BuffaloCape_Human_nc_mitoMask.fasta
+2025-12-29 12:32:28 INFO  StartCalculations:108 - 	Species (-s, optional):		null
+2025-12-29 12:32:28 INFO  StartCalculations:109 - 	Species list (-sf, optional):	null
+2025-12-29 12:32:28 INFO  StartCalculations:110 - 	Length (-l):			100
+2025-12-29 12:32:28 INFO  StartCalculations:111 - 	Threshold (-t):			25
+2025-12-29 12:32:28 INFO  StartCalculations:112 - 	Height y-axis (-yaxis):		0.4
+2025-12-29 12:32:28 INFO  StartCalculations:113 - 	Color C->T:			0xff0000ff
+2025-12-29 12:32:28 INFO  StartCalculations:114 - 	Color G->A:			0x0000ffff
+2025-12-29 12:32:28 INFO  StartCalculations:115 - 	Color insertions:		0xff00ffff
+2025-12-29 12:32:28 INFO  StartCalculations:116 - 	Color deletions:		0x008000ff
+2025-12-29 12:32:28 INFO  StartCalculations:117 - 	Color other:			0x808080ff
+2025-12-29 12:32:28 INFO  StartCalculations:118 - 	Title:				ScA037.BuffaloCape_Human_nc.Target.rmdup.noMicro
+2025-12-29 12:32:28 INFO  StartCalculations:119 - 	ssLib protocol used:		false
+2025-12-29 12:32:28 INFO  StartCalculations:120 - 	Use only merged reads:		false
+
+2025-12-29 12:41:00 INFO  StartCalculations:101 - Welcome to DamageProfiler v1.1
+
+2025-12-29 12:41:00 INFO  StartCalculations:104 - Parameters: 
+
+2025-12-29 12:41:00 INFO  StartCalculations:105 - 	Analysis of file (-i):		ScA037.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+2025-12-29 12:41:00 INFO  StartCalculations:106 - 	Output folder (-o):		null
+2025-12-29 12:41:00 INFO  StartCalculations:107 - 	Reference (-r, optional):	/projects/lorenzen/people/pzx702/palaeobovids/refgenomes/competitive_mapping/BuffaloCape_Human_nc_mitoMask.fasta
+2025-12-29 12:41:00 INFO  StartCalculations:108 - 	Species (-s, optional):		null
+2025-12-29 12:41:00 INFO  StartCalculations:109 - 	Species list (-sf, optional):	null
+2025-12-29 12:41:00 INFO  StartCalculations:110 - 	Length (-l):			100
+2025-12-29 12:41:00 INFO  StartCalculations:111 - 	Threshold (-t):			25
+2025-12-29 12:41:00 INFO  StartCalculations:112 - 	Height y-axis (-yaxis):		0.4
+2025-12-29 12:41:00 INFO  StartCalculations:113 - 	Color C->T:			0xff0000ff
+2025-12-29 12:41:00 INFO  StartCalculations:114 - 	Color G->A:			0x0000ffff
+2025-12-29 12:41:00 INFO  StartCalculations:115 - 	Color insertions:		0xff00ffff
+2025-12-29 12:41:00 INFO  StartCalculations:116 - 	Color deletions:		0x008000ff
+2025-12-29 12:41:00 INFO  StartCalculations:117 - 	Color other:			0x808080ff
+2025-12-29 12:41:00 INFO  StartCalculations:118 - 	Title:				ScA037.BuffaloCape_Human_nc.Target.rmdup.noMicro
+2025-12-29 12:41:00 INFO  StartCalculations:119 - 	ssLib protocol used:		false
+2025-12-29 12:41:00 INFO  StartCalculations:120 - 	Use only merged reads:		false
+
+2025-12-29 12:41:02 INFO  StartCalculations:179 - Starting analysis
+
+2025-12-29 12:41:03 INFO  StartCalculations:65 - 	Reading file ScA037.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+2025-12-29 12:41:03 INFO  StartCalculations:108 - 	Start processing each mapped record in input file
+2025-12-29 12:41:03 INFO  StartCalculations:914 - 	Base frequencies are normalized
+
+2025-12-29 12:41:03 INFO  StartCalculations:104 - Start writing output files:
+2025-12-29 12:41:03 INFO  StartCalculations:149 - 	lgdistribution.txt
+2025-12-29 12:41:03 INFO  StartCalculations:535 - 	3pGtoA_freq.txt and 5pCtoT_freq.txt
+2025-12-29 12:41:03 INFO  StartCalculations:322 - 	misincorporation.txt
+2025-12-29 12:41:03 INFO  StartCalculations:243 - 	DNA_composition_sample.txt
+2025-12-29 12:41:03 INFO  StartCalculations:208 - 	DNA_comp_genome.txt
+2025-12-29 12:41:03 INFO  StartCalculations:634 - 	5p_freq_misincorporations.txt and 3p_freq_misincorporations.txt
+2025-12-29 12:41:03 INFO  StartCalculations:117 - 	dmgprof.json
+2025-12-29 12:41:03 INFO  StartCalculations:933 - 	DamagePlot_three_prime.svg, DamagePlot.pdf, and DamagePlot_five_prime.svg
+2025-12-29 12:41:03 INFO  StartCalculations:494 - 	Length_plot.pdf, Length_plot_combined_data.svg, and Length_plot_forward_reverse_separated.svg
+2025-12-29 12:41:04 INFO  StartCalculations:518 - 	edit_distance.pdf and edit_distance.svg
+2025-12-29 12:41:04 INFO  StartCalculations:772 - 	editDistance.txt
+
+2025-12-29 12:41:04 INFO  StartCalculations:195 - Statistics:
+2025-12-29 12:41:04 INFO  StartCalculations:196 - 	# of total reads in input file:		2.070
+2025-12-29 12:41:04 INFO  StartCalculations:197 - 	# reads used for damage calculation:	2.070 (100.0%)
+
+2025-12-29 12:41:04 INFO  StartCalculations:200 - 	Length distribution:
+2025-12-29 12:41:04 INFO  StartCalculations:201 - 		- mean		38,33
+2025-12-29 12:41:04 INFO  StartCalculations:202 - 		- median	36
+2025-12-29 12:41:04 INFO  StartCalculations:203 - 		- std		8,6
+
+
+2025-12-29 12:41:04 INFO  StartCalculations:205 - FINISHED SUCCESSFULLY: Output files generated and saved: /maps/projects/lorenzen/people/pzx702/palaeobovids/paleomix/compMap_nc/ScA037.damageProfiler
+2025-12-29 12:41:04 INFO  StartCalculations:232 - Runtime of DamageProfiler:	1,12 seconds
+

@@ -1,0 +1,54 @@
+# table produced by DamageProfiler
+# using mapped file ToA009.ElandCommon_Human_nc.Target.rmdup.noMicro.bam
+# Sample ID: ToA009.ElandCommon_Human_nc.Target.rmdup.noMicro.bam
+# Std: strand of reads
+Std	Length	Occurrences
++	30	23
++	31	2
++	32	2
++	33	3
++	34	1
++	36	1
++	40	2
++	43	1
++	45	1
++	46	2
++	49	1
++	52	1
++	53	1
++	55	1
++	61	2
++	66	1
++	69	1
++	70	1
++	83	1
++	84	1
++	121	1
+-	30	23
+-	31	7
+-	32	2
+-	33	2
+-	36	2
+-	37	1
+-	40	1
+-	42	1
+-	43	1
+-	44	1
+-	47	2
+-	48	1
+-	49	1
+-	50	1
+-	51	3
+-	53	1
+-	57	1
+-	58	1
+-	60	1
+-	61	1
+-	62	2
+-	63	1
+-	67	1
+-	72	1
+-	93	1
+-	103	1
+-	107	1
+-	194	1

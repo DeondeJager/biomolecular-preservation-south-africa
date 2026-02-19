@@ -1,0 +1,47 @@
+# table produced by DamageProfiler
+# using mapped file PcA024.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+# Sample ID: PcA024.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+# Std: strand of reads
+Std	Length	Occurrences
++	30	216
++	31	86
++	32	18
++	33	11
++	34	2
++	35	2
++	36	2
++	40	2
++	41	2
++	43	2
++	44	1
++	45	1
++	46	1
++	47	1
++	48	1
++	49	1
++	50	1
++	51	1
++	52	2
++	55	1
++	56	1
++	69	1
++	73	1
++	75	1
++	76	1
+-	30	216
+-	31	76
+-	32	33
+-	33	9
+-	34	5
+-	35	1
+-	36	1
+-	37	2
+-	38	3
+-	39	1
+-	42	2
+-	46	2
+-	50	1
+-	51	1
+-	61	2
+-	62	1
+-	74	1

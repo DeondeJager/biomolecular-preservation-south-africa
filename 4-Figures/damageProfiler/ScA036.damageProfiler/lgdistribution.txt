@@ -1,0 +1,28 @@
+# table produced by DamageProfiler
+# using mapped file ScA036.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+# Sample ID: ScA036.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+# Std: strand of reads
+Std	Length	Occurrences
++	30	102
++	31	48
++	32	14
++	33	7
++	34	5
++	35	4
++	36	4
++	37	1
++	43	1
++	49	1
++	53	1
+-	30	123
+-	31	59
+-	32	22
+-	33	5
+-	34	6
+-	35	4
+-	36	1
+-	37	2
+-	42	2
+-	43	1
+-	51	1
+-	54	1

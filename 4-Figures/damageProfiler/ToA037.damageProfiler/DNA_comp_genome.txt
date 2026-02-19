@@ -1,0 +1,10 @@
+# table produced by DamageProfiler
+# using mapped file ToA037.ElandCommon_Human_nc.Target.rmdup.noMicro.bam
+# Sample ID: ToA037.ElandCommon_Human_nc.Target.rmdup.noMicro.bam
+DNA base frequencies Sample
+A	C	G	T
+0.29665160040586663	0.22239645789133844	0.2211973065215386	0.25975463518125635
+
+DNA base frequencies Reference
+A	C	G	T
+0.2997391052275582	0.22040776886655716	0.216349405739685	0.2635037201661996

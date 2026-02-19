@@ -1,0 +1,5 @@
+#Edit distances for file:PaA012.BuffaloCape_Human_nc.Target.rmdup.noMicro_SCR_091.bam
+Edit distance	Occurrences
+0.0	0
+1.0	0
+3.0	0

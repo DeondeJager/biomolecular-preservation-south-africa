@@ -1,0 +1,29 @@
+# table produced by DamageProfiler
+# using mapped file ToA038.ElandCommon_Human_nc.Target.rmdup.noMicro.bam
+# Sample ID: ToA038.ElandCommon_Human_nc.Target.rmdup.noMicro.bam
+pos	3pG>A
+1	0.18181818181818182
+2	0.07142857142857142
+3	0.0
+4	0.0
+5	0.0
+6	0.0
+7	0.0
+8	0.0
+9	0.0
+10	0.0
+11	0.05263157894736842
+12	0.0
+13	0.0
+14	0.045454545454545456
+15	0.0
+16	0.0
+17	0.0
+18	0.0
+19	0.0
+20	0.0
+21	0.0
+22	0.0625
+23	0.06666666666666667
+24	0.0
+25	0.0

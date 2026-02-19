@@ -1,0 +1,10 @@
+# table produced by DamageProfiler
+# using mapped file PaA004.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+# Sample ID: PaA004.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+DNA base frequencies Sample
+A	C	G	T
+0.34051038402391504	0.21517217124722754	0.2040789580641041	0.24023848666475336
+
+DNA base frequencies Reference
+A	C	G	T
+0.3430645895749983	0.2128923742327268	0.20193504915757476	0.24210798703470016

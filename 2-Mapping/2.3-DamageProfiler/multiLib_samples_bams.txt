@@ -1,0 +1,9 @@
+PaA004.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+PaA011.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+PaA012.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+PaA013.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+PcA005.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+RxA007.ReedbuckBh_Human_nc.Target.rmdup.noMicro.bam
+ScA005.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+ScA009.BuffaloCape_Human_nc.Target.rmdup.noMicro.bam
+ToA008.ElandCommon_Human_nc.Target.rmdup.noMicro.bam

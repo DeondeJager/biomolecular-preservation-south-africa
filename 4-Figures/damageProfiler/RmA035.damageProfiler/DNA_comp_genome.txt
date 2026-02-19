@@ -1,0 +1,10 @@
+# table produced by DamageProfiler
+# using mapped file RmA035.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+# Sample ID: RmA035.GrysbokCape_Human_nc.Target.rmdup.noMicro.bam
+DNA base frequencies Sample
+A	C	G	T
+0.3251201823111599	0.18144617994909926	0.18057288287838716	0.3128607548613537
+
+DNA base frequencies Reference
+A	C	G	T
+0.3254016787575184	0.18295022366679511	0.18041617102551644	0.31123192655017007

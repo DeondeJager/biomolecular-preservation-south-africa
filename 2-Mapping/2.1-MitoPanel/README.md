@@ -1,0 +1,3 @@
+# Mapping reads from samples to the mitogenome reference panel for species ID
+ - Only one sample is included here as a representative of the rest, as the only thing that changes is the SampleID and the read file names.
+ - Script `2.1-mito_panel_array.slurm` is only the job submission script that submits all the actual scripts, which are here represented by script `mito_panel_109.sh`, which in turn uses the `paleomix_ScA001_mito_panel.yaml` file.

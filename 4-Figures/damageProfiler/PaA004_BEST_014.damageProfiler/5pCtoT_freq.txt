@@ -1,0 +1,29 @@
+# table produced by DamageProfiler
+# using mapped file PaA004.BuffaloCape_Human_nc.Target.rmdup.noMicro_BEST_014.bam
+# Sample ID: PaA004.BuffaloCape_Human_nc.Target.rmdup.noMicro_BEST_014.bam
+pos	5pC>T
+1	0.0
+2	0.02702702702702703
+3	0.05
+4	0.0
+5	0.025
+6	0.0625
+7	0.0
+8	0.0
+9	0.029411764705882353
+10	0.0
+11	0.07317073170731707
+12	0.0
+13	0.030303030303030304
+14	0.0
+15	0.0
+16	0.02702702702702703
+17	0.0
+18	0.0
+19	0.02857142857142857
+20	0.0
+21	0.0
+22	0.0
+23	0.0
+24	0.0
+25	0.0
