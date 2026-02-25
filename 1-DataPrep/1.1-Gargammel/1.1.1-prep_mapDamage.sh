@@ -4,6 +4,6 @@
 # See: https://github.com/Mvwestbury/AncientGenomicsWorkshop25/tree/main
 
 ## Mito
-cd /projects/lorenzen/people/pzx702/palaeobovids/gargammel/paleomix/RmA009_SCR086/mito/SCR_086.GrysbokCape.mapDamage/SCR_086
+cd /projects/lorenzen/people/userid/palaeobovids/gargammel/paleomix/RmA009_SCR086/mito/SCR_086.GrysbokCape.mapDamage/SCR_086
 awk '/\+/{sum+=$3; count[$2]+=$3} END{for (i in count) print i"\t"count[i]/sum}' lgdistribution.txt > Fragment_lengths.txt
 

@@ -7,16 +7,16 @@
 #SBATCH --cpus-per-task=10               # Number of CPU cores per task
 #SBATCH --mem-per-cpu=10G                # Memory required per CPU
 #SBATCH --time=03:00:00                 # Time limit hrs:min:sec
-#SBATCH --output=/projects/lorenzen/people/pzx702/palaeobovids/paleomix/%x_%A.%a.out        # Standard output log
-#SBATCH --error=/projects/lorenzen/people/pzx702/palaeobovids/paleomix/%x_%A.%a.err         # Standard error log
+#SBATCH --output=/projects/lorenzen/people/userid/palaeobovids/paleomix/%x_%A.%a.out        # Standard output log
+#SBATCH --error=/projects/lorenzen/people/userid/palaeobovids/paleomix/%x_%A.%a.err         # Standard error log
 
 # Path to job files
 echo "Processing input file mito_panel_${SLURM_ARRAY_TASK_ID}.sh"
-bash /home/pzx702/scripts/paleomix/palaeobovids/mito_panel/job_files/mito_panel_${SLURM_ARRAY_TASK_ID}.sh
+bash /home/userid/scripts/paleomix/palaeobovids/mito_panel/job_files/mito_panel_${SLURM_ARRAY_TASK_ID}.sh
 wait
 # Remove old summary file (otherwise it will be appended and not overwritten with the new data)
 
-cd /projects/lorenzen/people/pzx702/palaeobovids/paleomix/mito_panel
+cd /projects/lorenzen/people/userid/palaeobovids/paleomix/mito_panel
 rm paleomix_mito_panel.summary.txt
 
 # Combine results across all samples into summary table

@@ -119,15 +119,15 @@ Prefixes:
     # Replace 'PATH_TO_PREFIX' with the path to .fasta file containing the references
     # against which reads are to be mapped. Using the same name as filename is strongly
     # recommended (e.g. /path/to/Human_g1k_v37.fasta should be named 'Human_g1k_v37').
-    Path: /projects/lorenzen/people/pzx702/palaeobovids/refgenomes/competitive_mapping/GrysbokCape_Human_nc_mitoMask.fasta
+    Path: /projects/lorenzen/people/userid/palaeobovids/refgenomes/competitive_mapping/GrysbokCape_Human_nc_mitoMask.fasta
 
     # (Optional) Uncomment and replace 'PATH_TO_BEDFILE' with the path to a .bed file
     # listing extra regions for which coverage / depth statistics should be calculated;
     # if no names are specified for the BED records, results are named after the
     # chromosome / contig. Replace 'NAME' with the desired name for these regions.
     RegionsOfInterest:
-      GrysbokCape_nc: /projects/lorenzen/people/pzx702/palaeobovids/refgenomes/competitive_mapping/GrysbokCape_Nc.bed
-      Human_nc: /projects/lorenzen/people/pzx702/palaeobovids/refgenomes/competitive_mapping/Human_Nc.bed
+      GrysbokCape_nc: /projects/lorenzen/people/userid/palaeobovids/refgenomes/competitive_mapping/GrysbokCape_Nc.bed
+      Human_nc: /projects/lorenzen/people/userid/palaeobovids/refgenomes/competitive_mapping/Human_Nc.bed
 
 
 # Mapping targets are specified using the following structure. Replace 'NAME_OF_TARGET'
@@ -145,4 +145,4 @@ Prefixes:
 RmA001:
   RmA001:
     SCR_048:
-      Lane_3: /projects/lorenzen/people/pzx702/palaeobovids/PoolScreen_03/raw_data/SCR_048/*_{Pair}.fq.gz
+      Lane_3: /projects/lorenzen/people/userid/palaeobovids/PoolScreen_03/raw_data/SCR_048/*_{Pair}.fq.gz

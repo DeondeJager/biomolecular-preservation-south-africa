@@ -51,7 +51,7 @@ library(rstatix)
 library(lme4)
 library(MASS)
 
-setwd("C:/Users/pzx702/Documents/MSCAFellowship2021/Manuscripts/2023_aDNApreservation_SouthAfrica/Results/Paleomix/compMap_nc")
+#setwd("")
 
 ```
 

@@ -5,8 +5,8 @@
 #SBATCH --cpus-per-task=2               # Number of CPU cores per task
 #SBATCH --mem-per-cpu=10G                # Memory required per CPU
 #SBATCH --time=08:00:00                 # Time limit hrs:min:sec
-#SBATCH --output=/projects/lorenzen/people/pzx702/palaeobovids/paleomix/compMap_nc/%x_%j.out        # Standard output log
-#SBATCH --error=/projects/lorenzen/people/pzx702/palaeobovids/paleomix/compMap_nc/%x_%j.err         # Standard error log
+#SBATCH --output=/projects/lorenzen/people/userid/palaeobovids/paleomix/compMap_nc/%x_%j.out        # Standard output log
+#SBATCH --error=/projects/lorenzen/people/userid/palaeobovids/paleomix/compMap_nc/%x_%j.err         # Standard error log
 
 # The %j in the --output & --error lines tells SLURM to substitute the job ID in the name of the output file
 # See: https://help.rc.ufl.edu/doc/Sample_SLURM_Scripts#Sample_SLURM_Scripts
@@ -24,8 +24,8 @@ module purge
 module load samtools/1.15
 
 # Navigate to working directory and set up variables
-cd /projects/lorenzen/people/pzx702/palaeobovids/paleomix/compMap_nc
-REF=/projects/lorenzen/people/pzx702/palaeobovids/refgenomes/competitive_mapping
+cd /projects/lorenzen/people/userid/palaeobovids/paleomix/compMap_nc
+REF=/projects/lorenzen/people/userid/palaeobovids/refgenomes/competitive_mapping
 
 ## Split bam files for samples with multiple libraries, so that DamageProfiler can be done on lobs separately
 ### These are (list saved in file multiLib_samples.txt and list of bams saved in multiLib_samples_bams.txt):

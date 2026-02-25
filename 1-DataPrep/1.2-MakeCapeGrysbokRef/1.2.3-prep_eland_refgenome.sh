@@ -36,6 +36,6 @@ grep -v ">" GCA_006416875.1_CME_genomic.fasta | wc | awk '{print $3-$1}'
 # 2147716187/2837493372 = 0.7569. So it actually represents 75.7% of the original genome, but that's fine for now
 
 # Concatenate these scaffolds into Super_Scaffolds using ScaffoldStitcher and then use that genome for mapping and endogenous content calculations
-python /projects/lorenzen/people/pzx702/software/ScaffoldStitcher-1.0/ScaffoldStitcher.py -fasta GCA_006416875.1_CME_genomic.N90.fasta -identifier SJYK -short 36 -nlength 1000 -maxlength 150000000 > GCA_006416875.1_CME_genomic.N90.SS.fasta
+python /projects/lorenzen/people/userid/software/ScaffoldStitcher-1.0/ScaffoldStitcher.py -fasta GCA_006416875.1_CME_genomic.N90.fasta -identifier SJYK -short 36 -nlength 1000 -maxlength 150000000 > GCA_006416875.1_CME_genomic.N90.SS.fasta
 # This gives a stitched genome with 25 Super_Scaffolds, which is close to the number of chromosomes eland have (31/32 for male/female).
 

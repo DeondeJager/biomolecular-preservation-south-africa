@@ -1,14 +1,14 @@
 #!/bin/bash
 #SBATCH --job-name=gargammel_palaeobovids_mito         # Job name
 #SBATCH --mail-type=BEGIN,END,FAIL      # Mail events (NONE, BEGIN, END, FAIL, ALL)
-#SBATCH --mail-user=dejager4@gmail.com  # Where to send mail	
+#SBATCH --mail-user=  # Where to send mail	
 #SBATCH --nodes=1                       # Run all processes on a single node
 #SBATCH --ntasks=1                      # Run on a single task
 #SBATCH --cpus-per-task=4               # Number of CPU cores per task
 #SBATCH --mem-per-cpu=12G                # Memory required per CPU
 #SBATCH --time=00:10:00                 # Time limit hrs:min:sec
-#SBATCH --output=/projects/lorenzen/people/pzx702/palaeobovids/gargammel/gargammel_mito_%j.out        # Standard output log
-#SBATCH --error=/projects/lorenzen/people/pzx702/palaeobovids/gargammel/gargammel_mito_%j.err         # Standard error log
+#SBATCH --output=/projects/lorenzen/people/userid/palaeobovids/gargammel/gargammel_mito_%j.out        # Standard output log
+#SBATCH --error=/projects/lorenzen/people/userid/palaeobovids/gargammel/gargammel_mito_%j.err         # Standard error log
 
 # The %j in the --output & --error lines tells SLURM to substitute the job ID in the name of the output file
 # See: https://help.rc.ufl.edu/doc/Sample_SLURM_Scripts#Sample_SLURM_Scripts 
@@ -22,7 +22,7 @@ hostname; date
 echo "Running job on $SLURM_CPUS_ON_NODE CPU cores"
 
 # Activate conda environment (if module is not available)
-#source /home/pzx702/.bashrc
+#source /home/userid/.bashrc
 #conda activate /projects/lorenzen/apps/conda/...
 
 # Load modules and set up enviroment variables
@@ -31,8 +31,8 @@ module load gargammel/1.1.2
 module load bbmap/39.17 
 
 # Navigate to working directory
-cd /projects/lorenzen/people/pzx702/palaeobovids/gargammel/data
-DAMAGE=/projects/lorenzen/people/pzx702/palaeobovids/gargammel/paleomix/RmA009_SCR086/nuclear/SCR_086.GrysbokCape.mapDamage/SCR_086
+cd /projects/lorenzen/people/userid/palaeobovids/gargammel/data
+DAMAGE=/projects/lorenzen/people/userid/palaeobovids/gargammel/paleomix/RmA009_SCR086/nuclear/SCR_086.GrysbokCape.mapDamage/SCR_086
 
 # Insert commands here:
 # Generate 150PE reads

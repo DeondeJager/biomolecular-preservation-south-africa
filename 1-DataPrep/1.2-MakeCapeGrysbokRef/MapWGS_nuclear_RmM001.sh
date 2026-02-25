@@ -1,5 +1,5 @@
 #!/bin/bash
-#source /home/pzx702/.bashrc
+#source /home/userid/.bashrc
 # Map modern WGS reads
 
 ## Modules are loaded in the slurm script used to execute this script

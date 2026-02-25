@@ -1,7 +1,7 @@
 # Get and plot damage patterns and read lengths from DamageProfiler JSON output
 
 # Set working directory ----
-setwd("")
+#setwd("")
 
 # Load packages ----
 library(tidyverse)

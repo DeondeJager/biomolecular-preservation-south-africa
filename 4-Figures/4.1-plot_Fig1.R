@@ -1,7 +1,7 @@
 # Figure 1 - Sampling overview
 
 # Set working directory
-setwd("C:/Users/pzx702/Documents/MSCAFellowship2021/Manuscripts/2023_aDNApreservation_SouthAfrica/Samples")
+#setwd("")
 
 # Load packages
 library(tidyverse)

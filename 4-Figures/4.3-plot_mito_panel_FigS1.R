@@ -1,7 +1,7 @@
 # Plot screening data mapped to mito_panel for species ID - Creates Figure S1
 
 # Set working directory
-setwd("C:/Users/pzx702/Documents/MSCAFellowship2021/Manuscripts/2023_aDNApreservation_SouthAfrica/Results/Paleomix/mito_panel")
+#setwd("")
 
 ## Load packages
 library(tidyverse)

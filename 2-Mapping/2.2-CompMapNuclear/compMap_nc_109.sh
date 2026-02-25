@@ -9,13 +9,13 @@ echo "Running job on $SLURM_CPUS_ON_NODE CPU cores"
 
 # Load modules/activate conda environments
 ## Initiate conda environment on the compute node first
-source /home/pzx702/.bashrc
+source /home/userid/.bashrc
 ### Activate package
 conda deactivate
 conda activate paleomix # This is version 1.3.9
 
 # Navigate to working directory where yaml file is
-cd /projects/lorenzen/people/pzx702/palaeobovids/paleomix/compMap_nc
+cd /projects/lorenzen/people/userid/palaeobovids/paleomix/compMap_nc
 
 # Execute paleomix
 echo "$(date) Mapping sample ScA001..."
