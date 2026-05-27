@@ -1,5 +1,7 @@
 # biomolecular-preservation-south-africa
- - Scripts for analyses and plots for the manuscript evaluating DNA and collagen preservation in South African bovid fossils.
+ - Scripts for analyses and plots for the following manuscript:
+   
+   > de Jager, D., Wilson, A. M., Rey-Iglesia, A., Faith, J. T., O'Brien, K., Black, W., Seconna, W., Hall, O., Szpak, P., & Lorenzen, E. D. (2026). Evaluation of DNA and collagen preservation in Late Pleistocene and Holocene bovid fossils from South Africa. *Quaternary Science Reviews, 388*, 110076. https://doi.org/10.1016/j.quascirev.2026.110076 
  - README files with more details are included in subfolders.
 
 ## Repository structure
